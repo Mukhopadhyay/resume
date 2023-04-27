@@ -1,2 +1,3 @@
-# resume
+# Resume
+
 My resume template
