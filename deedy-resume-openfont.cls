@@ -68,6 +68,12 @@ Last Updated on
 \newcommand{\runsubsection}[1]{\color{subheadings}
 \fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
+% Projects
+\newcommand{\project}[1]{\color{headings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Bold}\fontsize{11pt}{13pt}\selectfont {#1} \normalfont}
+
+% Keywords
+\newcommand{\keyword}[1]{\color{subheadings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\fontsize{10pt}{12pt}\selectfont {#1} \normalfont}
+
 % Descriptors command
 \newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
