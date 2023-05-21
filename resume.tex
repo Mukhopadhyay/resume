@@ -68,6 +68,7 @@
 
 \namesection{Pranesh}{Mukhopadhyay}{
 % { \urlstyle{same}\url{http://example.com} \\
+Mumbai, India \\
 \href{mailto:praneshmukherjee7@gmail.com}{praneshmukherjee7@gmail.com} | 96747-70912
 }
 
@@ -82,68 +83,11 @@
 
 \section{Experience}
 
-\runsubsection{Boxwish Media LLP. / Spiritzone}
-\descript{| Consultant - Data Engineering }
-\location{Dec 2021 – Present | Navi Mumbai}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-
-\project{Order Assignment System}
-\begin{tightemize}
-\item Real time order assignment system made using \keyword{Python}, \keyword{FastAPI} and hosted and container orchestration handled using \keyword{Docker compose}, supporting Webhook listener \& dynamic trip creation.
-\item Intelligent algorithm used to dynamically perform order batching based on delivery partner availability and order volumes. Maintaining a fair and unbiased delivery agent ranking system.
-\item Added support for centralized logging using MongoDB and end to end unit testing using Pytest \& Flake8
-\end{tightemize}
-
-\project{Product Search API}
-\begin{tightemize}
-\item An incrementally trainable search API, which can index products even with their attributes developed using \keyword{Python} \& \keyword{Scikit-Learn} using Bag of Characters model
-\item Hosted using \keyword{gunicorn} for maximizing concurrent requests
-\item 80\%+ Unit test coverage using \& Passed swarm test conducted using Locust
-\end{tightemize}
-
-\project{Order ETA Calculation API}
-\begin{tightemize}
-\item A fast, interpretable stateless microservice for providing real time order delivery time estimates.
-\item Built using \keyword{Python}, \keyword{FastAPI} \& \keyword{TensorFlow} and hosted using Docker compose for easy container orchestration.
-\item Maintaining model lifecycles using \keyword{MLOps} and testing the service using \keyword{Pytest} and \keyword{Locust}
-\end{tightemize}
+\subimport{./components/experiences}{spiritzone.tex}
 
 \sectionsep
 
-\runsubsection{Quosphere Infosolutions Pvt. Ltd.}
-\descript{| Junior Data Scientist }
-\location{Jul 2020 – Dec 2021 | Navi Mumbai}
-\vspace{\topsep}
-
-\location{Spiritzone Product Recommender System}
-
-\textbullet{} \keyword{Python} \textbullet{} \keyword{Flask} \textbullet{} \keyword{Collaborative Filtering} \textbullet{} \keyword{Content based recommender system} 
-
-\begin{tightemize}
-\item A hybrid recommender system trained using user's product browsing patterns and feedback path drawn from customer engagement platforms where the models are incrementally trained using the customer interaction data.
-\item Highly scalable and easily maintainable stateless microservices developed using Python and Flask. Capable of handling 30+ requests per second asynchronously.
-\item End to end unit \& integration tested using python's built-in unit test library
-\end{tightemize}
-
-\location{Market Basket Analysis}
-
-\keyword{Python} \textbullet{} \keyword{FastAPI} \textbullet{} \keyword{Apriori Algorithm} \textbullet{} \keyword{Docker compose} \textbullet{} \keyword{FP-Growth Algorithm}
-
-\begin{tightemize}
-\item Developed using the \keyword{Apriori} and \keyword{FP-Growth} algorithm for efficient, scalable and maintainable stateless microservice.
-\item Used FastAPI and Docker to make the deployment process easier alongside a complete build pipeline, capable of training the the models on a daily basis.
-\item Unit tests with 90\%+ code coverage \& successfully handled load testing with 30+ concurrent requests per second (conducted using Locust).
-\end{tightemize}
-
-\location{Clickstream Data Analytics Pipeline}
-
-\keyword{Azure Data Explorer} \textbullet{} \keyword{Python} \textbullet{} \keyword{Grafana}
-
-\begin{tightemize}
-\item A data pipeline using azure's python SDK and Azure Data Explorer to move huge volume of data incrementally.
-\item Scheduled reports that gets sent out everytime data ingestion process has been finished.
-\item Dynamically controlling frequency of ingestion without losing any data.
-\end{tightemize}
+\subimport{./components/experiences}{quosphere.tex}
 
 \sectionsep
 
@@ -152,23 +96,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
-\runsubsection{\href{https://monolg.readthedocs.io/en/latest/}{Monolg}}
-\descript{| An easy to use centralized Mongo db logging library}
-% \location{Jan 2014 – Present | Ithaca, NY}
 
-A Simple easy to use centralized logging library for Python using MongoDB. Deployed at Python Packaging Index aka. PyPI at \href{https://pypi.org/project/monolg/}{pypi.org/project/monolg}. The library was written so that any Python developer who uses the default logging library can get started with Monolg as easily. With complete documentation and user guide hosted in Read the docs at \href{https://monolg.readthedocs.io/en/latest/}{\keyword{monolg.readthedocs.io}}.
-
-\href{https://github.com/Mukhopadhyay/monolg}{\faIcon[solid]{github} github.com/Mukhopadhyay/monolg}
+\subimport{./components/projects}{monolg.tex}
 
 \sectionsep
 
-\runsubsection{YouTube Subtitle Dataset}
-\descript{| The most versatile YouTube transcription dataset}
-\location{Mar 2012 – May 2013 | Ithaca, NY}
-
-Dataset containing 2500+ unique popular YouTube video subtitle, with manually annotated video category, that can be used as the dependent variable. Alongside the video categories we have various different video related attributes such as duration, channel name, subscriber count etc.
-
-\href{https://www.kaggle.com/datasets/praneshmukhopadhyay/youtubers-saying-things}{\faIcon[solid]{kaggle} \keyword{kaggle.com/datasets/praneshmukhopadhyay/youtubers-saying-things}}
+\subimport{./components/projects}{yst.tex}
 
 \sectionsep
 
@@ -183,17 +116,7 @@ Dataset containing 2500+ unique popular YouTube video subtitle, with manually an
 \sectionsep
 
 \section{Skills}
-\begin{minipage}[t]{.6\textwidth}
-\subsection{Programming}
-Python \textbullet{}   C++ \textbullet{} JavaScript
-\subsection{Libraries \& frameworks}
-TensorFlow \textbullet{} PyTorch \textbullet{} Pandas \textbullet{} Numpy \textbullet{} Scipy \textbullet{} FastAPI
-\subsection{Databases}
-MSSQL \textbullet{} PostgreSQL \textbullet{} MongoDB \textbullet{} MySQL
-\subsection{DevOps and other tools}
-Docker \textbullet{} Kubernetes \textbullet{} Github Actions \textbullet{} Azure Pipelines \textbullet{} Grafana
-\sectionsep
-\end{minipage}
+\subimport{./components}{skills.tex}
 
 \sectionsep
 
