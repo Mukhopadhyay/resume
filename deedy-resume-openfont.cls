@@ -18,12 +18,14 @@
 \usepackage[UKenglish]{isodate}
 \usepackage{fontspec,xltxtra,xunicode}
 \usepackage{fontawesome5}
-
+\usepackage{xcolor}
+\usepackage{import}
 
 % Color definitions
 \definecolor{date}{HTML}{666666} 
 \definecolor{primary}{HTML}{2b2b2b} 
 \definecolor{headings}{HTML}{6A6A6A}
+\definecolor{colored}{HTML}{2795ba}
 \definecolor{subheadings}{HTML}{333333}
 
 % Set main fonts
@@ -57,8 +59,9 @@ Last Updated on
 \titlespacing{\section}{0pt}{0pt}{0pt}
 
 % Headings command
-\titleformat{\section}{\color{headings}
+\titleformat{\section}{\color{colored}
 \scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{} {0em}{}
+
 
 % Subeadings command
 \titleformat{\subsection}{\color{subheadings}
@@ -73,6 +76,9 @@ Last Updated on
 
 % Keywords
 \newcommand{\keyword}[1]{\color{subheadings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\fontsize{10pt}{12pt}\selectfont {#1} \normalfont}
+
+% link
+\newcommand{\link}[1]{\color{colored}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Regular}\fontsize{10pt}{12pt}\selectfont {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
