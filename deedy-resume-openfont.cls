@@ -77,6 +77,9 @@ Last Updated on
 % Keywords
 \newcommand{\keyword}[1]{\color{subheadings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\fontsize{10pt}{12pt}\selectfont {#1} \normalfont}
 
+% Light Keywords
+\newcommand{\keywordlight}[1]{\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\fontsize{10pt}{12pt}\selectfont {#1} \normalfont}
+
 % link
 \newcommand{\link}[1]{\color{colored}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Regular}\fontsize{10pt}{12pt}\selectfont {#1} \normalfont}
 
