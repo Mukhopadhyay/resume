@@ -1,26 +1,31 @@
-Deedy-Resume
-=========================
+# Modular Deedy Resume
+
+Author: Pranesh Mukhopadhyay
+
+# Deedy-Resume
 
 A **one-page**, **two asymmetric column** resume template in **XeTeX** that caters particularly to an **undergraduate Computer Science** student.
 As of **v1.2**, there is an option to choose from two templates:
 
-1. **MacFonts** - uses fonts native to OSX - *Helvetica*, *Helvetica Neue* (and it's Light and Ultralight versions) and the CJK fonts *Heiti SC*, and *Heiti TC*. The EULA of these fonts prevents distribution on Open Source.
-2. **OpenFonts** - uses free, open-source fonts that resemble the above - *Lato* (and its various variants) and *Raleway*.
+1. **MacFonts** - uses fonts native to OSX - _Helvetica_, _Helvetica Neue_ (and it's Light and Ultralight versions) and the CJK fonts _Heiti SC_, and _Heiti TC_. The EULA of these fonts prevents distribution on Open Source.
+2. **OpenFonts** - uses free, open-source fonts that resemble the above - _Lato_ (and its various variants) and _Raleway_.
 
 It is licensed under the Apache License 2.0.
 
 ## Motivation
 
-Common LaTeX resume-builders such as [**moderncv**](http://www.latextemplates.com/template/moderncv-cv-and-cover-letter)  and the [**friggeri-cv**](https://github.com/afriggeri/cv) look great if you're looking for a multi-page resume with numerous citations, but usually imperfect for making a thorough, single-page one. A lot of companies today search resumes based on [keywords](http://www.businessinsider.com/most-big-companies-have-a-tracking-system-that-scans-your-resume-for-keywords-2012-1) but at the same time require/prefer a one-page resume, especially for undergraduates. 
+Common LaTeX resume-builders such as [**moderncv**](http://www.latextemplates.com/template/moderncv-cv-and-cover-letter) and the [**friggeri-cv**](https://github.com/afriggeri/cv) look great if you're looking for a multi-page resume with numerous citations, but usually imperfect for making a thorough, single-page one. A lot of companies today search resumes based on [keywords](http://www.businessinsider.com/most-big-companies-have-a-tracking-system-that-scans-your-resume-for-keywords-2012-1) but at the same time require/prefer a one-page resume, especially for undergraduates.
 
 This template attempts to **look clean**, highlight **details**, be a **single page**, and allow useful **LaTeX templating**.
 
 ## Preview
 
 ### OpenFonts
+
 ![alt tag](https://raw.githubusercontent.com/deedydas/Deedy-Resume/master/OpenFonts/sample-image.png)
 
 ### MacFonts
+
 ![alt tag](https://raw.githubusercontent.com/deedydas/Deedy-Resume/master/MacFonts/sample-image.png)
 
 ## Dependencies
@@ -36,19 +41,23 @@ This template attempts to **look clean**, highlight **details**, be a **single p
 4. **ShareLatex**.com (v1 fonts changes) - [compilable online](https://www.sharelatex.com/templates/cv-or-resume/deedy-resume)
 
 ## Changelog
+
 ### v1.2
- 1. Added publications in place of societies.
- 2. Collapsed a portion of education.
- 3. Fixed a bug with alignment of overflowing long last updated dates on the top right. 
+
+1.  Added publications in place of societies.
+2.  Collapsed a portion of education.
+3.  Fixed a bug with alignment of overflowing long last updated dates on the top right.
 
 ### v1.1
- 1. Fixed several compilation bugs with \renewcommand
- 2. Got Open-source fonts (Windows/Linux support)
- 3. Added Last Updated
- 4. Moved Title styling into .sty
- 5. Commented .sty file.
+
+1.  Fixed several compilation bugs with \renewcommand
+2.  Got Open-source fonts (Windows/Linux support)
+3.  Added Last Updated
+4.  Moved Title styling into .sty
+5.  Commented .sty file.
 
 ## TODO
+
 1. Merge OpenFont and MacFonts as a single sty with options.
 2. Figure out a smoother way for the document to flow onto the next page.
 3. Add styling information for a "Projects/Hacks" section.
@@ -57,11 +66,13 @@ This template attempts to **look clean**, highlight **details**, be a **single p
 6. Add various styling and section options and allow for multiple pages smoothly.
 
 ## Known Issues:
+
 1. Overflows onto second page if any column's contents are more than the vertical limit
 2. Hacky space on the first bullet point on the second column.
 3. Hacky redefinition of \refname to omit 'References' text for publications in the MacFonts version.
 
 ## License
+
     Copyright 2014 Debarghya Das
 
     Licensed under the Apache License, Version 2.0 (the "License");
